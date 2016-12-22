@@ -1,0 +1,273 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+    font-weight:bold;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+body{
+    background-image: url("../imagenes/fondo.jpg");
+    color: white;
+}
+.box2 {
+    padding-left: 1.5%;
+    position:relative;
+    display: inline-block;
+    max-width: 29%;
+    height: auto;
+    margin: 1em;
+}
+
+.video{
+    position:relative;
+    margin-top: 1%;
+    text-align:center
+}
+
+.myVideo{
+    position:relative;
+    margin-top: 4%;
+    text-align:center
+}
+
+video.myVideo{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+
+#video{
+    position: relative; 
+    z-index: 1001;
+}
+
+video.video{
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#logo{
+    max-width: 70px;
+    height: 40;
+}
+
+.form {
+    font-family: "Roboto", sans-serif;
+    max-width: 25%;
+    min-width: 200px;
+    
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    margin: 10% auto 50px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    color:black;
+}
+
+.form h1{
+    color:black;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    max-width: 400px;
+}
+
+
+.form input[type=submit], button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #D20000;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+.formComentario {
+    font-family: "Roboto", sans-serif;
+    max-width: 25%;
+    min-width: 200px;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    margin: 10px auto 50px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    color: red;
+}
+
+.formComentario input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #DCD6D6;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    max-width: 400px;
+}
+
+
+.form input[type=submit], button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #004B84;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+.botones button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #004B84;
+  width: 10%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+.botones button:disabled {
+    background: #dddddd;
+    cursor: not-allowed ;
+      color: red;
+}
+
+.comentarios{
+    text-align:center
+}
+
+.comentarios table{
+    width: 45%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+th {
+    background-color: #004b84;
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+td {
+    text-align: center;
+    padding: 8px;
+    color: black;
+}
+tr:nth-child(even){
+    background-color: #cff4d9
+}
+tr:nth-child(odd){
+    background-color: #f0f7f9
+}
+
+#vacio{
+    opacity: 0;
+}
+
+#botonLike, #botonDislike{
+    max-width: 120px;
+    height: auto;
+    border:transparent;
+    background-color: transparent;
+    
+}
+
+#overlay{
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background: black; 
+    display: none; 
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color:blue;
+}
